@@ -1,0 +1,26 @@
+{
+  "name": "employees-apps",
+  "version": "1.0.0",
+  "description": "1. Students understands about WEB API\r 2. Students can apply REST API Architecture\r 3. Students can apply MVC concept in WEB API\r 4. Students understands how to use Postman\r 5. Students able to make API Documentation",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-js-flutter-bootcamp-batch-22/employees-apps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-js-flutter-bootcamp-batch-22/employees-apps/issues"
+  },
+  "homepage": "https://github.com/node-js-flutter-bootcamp-batch-22/employees-apps#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "rupiah-format": "^1.0.0"
+  }
+}

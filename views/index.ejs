@@ -1,0 +1,117 @@
+<%- include('layouts/header.ejs'); -%> 
+
+    <main class="my-container">
+        <div id="main-carousel" class="carousel slide">
+            <div class="carousel-inner">
+                <section id="auth-section" class="carousel-item active">
+                    <img id="hero-image" src="assets/hero.webp" alt="">
+                    <img id="brand-image" src="assets/logo.webp" alt="">
+                    <form action="" id="joinQueue">
+                        <fieldset id="joinQueueFieldset" class="row p-3">
+                            <h5 class="text-center fw-bold text-primary mb-4">SISTEM ANTRIAN PASIEN</h5>
+                            <div class="col-12 mb-3">
+                                <label class="text-muted" for="tanggal_kunjungan" class="form-label">Tanggal
+                                    Kunjungan</label>
+                                <input type="date" class="form-control form-control-lg" name="tanggal_kunjungan"
+                                    id="tanggal_kunjungan" onfocus="this.showPicker()" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="text-muted" for="klinik" class="form-label">Fasilitas Kesehatan</label>
+                                <select class="form-select form-select-lg" name="klinik" id="klinik" required>
+                                    <option value="1">Beltway Office Park</option>
+                                    <option value="2">World Trade Center</option>
+                                    <option value="3">Balikpapan</option>
+                                    <option value="4">Wellness</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="text-muted" for="antrian" class="form-label">Nomor Antrian</label>
+                                <input type="number" class="form-control form-control-lg" name="antrian" id="antrian"
+                                    required autocomplete="off" value="123">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="text-muted" for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                                <input type="date" class="form-control form-control-lg" name="tanggal_lahir"
+                                    id="tanggal_lahir" onfocus="this.showPicker()" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <button type="submit" id="join-button" class="btn btn-lg btn-primary w-100 mt-3">
+                                    MULAI MONITORING ANTRIAN
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="queue-section" class="carousel-item">
+                    <div class="row p-4 position-relative">
+                        <h5 class="text-center fw-bold text-primary m-0 mb-4 p-0">SISTEM ANTRIAN PASIEN</h5>
+                        <div class="card text-danger mb-2">
+                            <div class="card-body p-0">
+                                <p class="card-text py-2" style="font-size: 16px;">
+                                    <strong>Catatan:</strong>
+                                    Selama proses moitoring antrian berjalan mohon dipastikan
+                                    browser Anda tetap berjalan didalam layar handphone Anda
+                                    dan jangan menutup browser Anda. Terima kasih.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="text-center text-primary fw-bold border-bottom py-3">
+                                KLINIK MEDIKA PLAZA<br>
+                                <span id="clinicName"></span>
+                            </div>
+                            <div class="card-body" style="font-size: 14px;font-weight: bold;">
+                                <div class="row">
+                                    <p class="col-6 text-muted">NOMOR ANTRIAN</p>
+                                    <div class="col-6 card-text text-end">
+                                        <p id="patientId" class="badge rounded-pill bg-primary text-center"
+                                            style="font-size: 14px;"></p>
+                                        <p id="service" class="badge rounded-pill bg-warning" style="font-size: 14px;">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 text-muted">NAMA PASIEN</div>
+                                    <div class="col-6 card-text text-end">
+                                        <p id="patientName" class="text-secondary">...</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 text-muted">TANGGAL KUNJUNGAN</div>
+                                    <div class="col-6 card-text text-end">
+                                        <p id="visitDate" class="text-secondary">...</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 text-muted">TANGGAL LAHIR</div>
+                                    <div class="col-6 card-text text-end">
+                                        <p id="birthDate" class="text-secondary">...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded-circle bg-secondary text-center d-flex flex-column align-items-center justify-content-center my-4"
+                            style="width: 80%; aspect-ratio: 1/1; margin: auto" id="buletan">
+                        </div>
+                        <button type="button" class="btn btn-lg btn-secondary position-relative bottom-0 p-2"
+                            data-bs-target="#main-carousel" data-bs-slide="next">DAFTAR TINDAKAN</button>
+                    </div>
+                </section>
+                <section id="examination-section" class="carousel-item">
+                    <div class="row p-4">
+                        <div class="card mb-4">
+                            <div class="text-center text-primary fw-bold border-bottom py-3">
+                                DAFTAR TINDAKAN
+                            </div>
+                            <div id="examinationList" class="card-body">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-primary" data-bs-target="#main-carousel"
+                            data-bs-slide="prev">KEMBALI</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+<%- include('layouts/footer.ejs'); -%>

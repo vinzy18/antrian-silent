@@ -1,0 +1,67 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<section class="container d-flex justify-content-center mt-5">
+  <form
+    action="/jobs/update/<%= job.id %>"
+    method="POST"
+    class="row g-3 container d-flex justify-content-center mt-5"
+  >
+    <div class="row d-flex justify-content-center mb-3">
+      <h4 class="mb-5">+ Update data Job</h4>
+      <div class="col-md-10">
+        <label for="" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Name"
+          value="<%= job.name %>"
+        />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="category" class="form-label">Category</label>
+        <input
+          name="category"
+          type="text"
+          class="form-control"
+          placeholder="Category"
+          value="<%= job.category %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="max_salary" class="form-label">Max Salary</label>
+        <input
+          name="max_salary"
+          type="text"
+          class="form-control"
+          placeholder="Max Salary"
+          value="<%= job.max_salary %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="min_salary" class="form-label">Min Salary</label>
+        <input
+          name="min_salary"
+          type="text"
+          class="form-control"
+          placeholder="min_salary"
+          value="<%= job.min_salary %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 mt-3">
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary" value="Update Data" />
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include('../layouts/footer.ejs'); -%>

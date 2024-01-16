@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Kevin",
+    "job": "BE Developer",
+    "age": 23,
+    "city": "depok"
+  },
+  {
+    "id": 2,
+    "name": "Tono",
+    "job": "FE Developer",
+    "age": 25,
+    "city": "karawang"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Code ID",
+    "type": "Outsourcing",
+    "total_employee": 23,
+    "city": "west jakarta"
+  },
+  {
+    "id": 2,
+    "name": "Siloam Hospital",
+    "type": "Health",
+    "total_employee": 37,
+    "city": "South Jakarta"
+  },
+  {
+    "id": 4,
+    "name": "Kimia Farma",
+    "type": "Medicine",
+    "total_employee": 15,
+    "city": "West Jakarta"
+  },
+  {
+    "id": 5,
+    "name": "Test",
+    "type": "test",
+    "total_employee": null,
+    "city": "stets"
+  }
+]

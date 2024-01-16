@@ -1,0 +1,67 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<section class="container d-flex justify-content-center mt-5">
+  <form
+    action="/employees/update/<%= employee.id %>"
+    method="POST"
+    class="row g-3 container d-flex justify-content-center mt-5"
+  >
+    <div class="row d-flex justify-content-center mb-3">
+      <h4 class="mb-5">+ Update data Employee</h4>
+      <div class="col-md-10">
+        <label for="" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Name"
+          value="<%= employee.name %>"
+        />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="job" class="form-label">Job</label>
+        <input
+          name="job"
+          type="text"
+          class="form-control"
+          placeholder="Job"
+          value="<%= employee.job %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="age" class="form-label">Age</label>
+        <input
+          name="age"
+          type="text"
+          class="form-control"
+          placeholder="Total Employee"
+          value="<%= employee.age %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="city" class="form-label">City</label>
+        <input
+          name="city"
+          type="text"
+          class="form-control"
+          placeholder="city"
+          value="<%= employee.city %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 mt-3">
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary" value="Update Data" />
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include('../layouts/footer.ejs'); -%>

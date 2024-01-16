@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #004F7B;
+    --primary-accent-color: #0080C8;
+    --secondary-color: #38B5AA;
+    --accent-color: #ED8D1E;
+    --grey-color: #888;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.my-container {
+    max-width: 480px;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    border: 1px dotted var(--primary-accent-color);
+}
+
+#main-carousel,
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#hero-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+#brand-image {
+    margin: 16px 0 12px;
+    width: 100%;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: var(--accent-color) !important;
+    border: none;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.border-primary {
+    border: 1px solid var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+.bg-warning {
+    background-color: var(--accent-color) !important;
+    border: none;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+    border: none;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+    border: none;
+}
+
+.bg-grey {
+    background-color: var(--grey-color) !important;
+    border: none;
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

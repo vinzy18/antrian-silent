@@ -1,0 +1,63 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<section class="container d-flex justify-content-center mt-5">
+  <form
+    action="/employers/create"
+    method="POST"
+    class="row g-3 container d-flex justify-content-center mt-5"
+  >
+    <div class="row d-flex justify-content-center mb-3">
+      <h4 class="mb-5">+ Create data Employer</h4>
+      <div class="col-md-10">
+        <label for="" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Name"
+        />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="type" class="form-label">Type</label>
+        <input
+          name="type"
+          type="text"
+          class="form-control"
+          placeholder="Type"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="total_employee" class="form-label">Total Employee</label>
+        <input
+          name="total_employee"
+          type="text"
+          class="form-control"
+          placeholder="Total Employee"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="city" class="form-label">City</label>
+        <input
+          name="city"
+          type="text"
+          class="form-control"
+          placeholder="city"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 mt-3">
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary" value="Create Data" />
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include('../layouts/footer.ejs'); -%>

@@ -1,0 +1,49 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h4 class="text-start mb-3">Employer List</h4>
+      <a href="/employers/create" class="btn btn-secondary btn-md"
+        >+ Create Data</a
+      >
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Total Employee</th>
+            <th>City</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% employers.forEach((employer) => { %>
+          <tr>
+            <td><%= employer.id %></td>
+            <td><%= employer.name %></td>
+            <td><%= employer.type %></td>
+            <td><%= employer.total_employee %></td>
+            <td><%= employer.city %></td>
+            <td>
+              <a
+                href="/employers/update/<%= employer.id %>"
+                class="btn btn-info btn-sm mr-2"
+                ><i class="fas fa-edit"></i> Edit</a
+              >
+              <a
+                href="/employers/delete/<%= employer.id %>"
+                class="btn btn-danger btn-sm"
+                ><i class="fas fa-trash"></i> Delete</a
+              >
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<%- include('../layouts/footer.ejs'); -%>

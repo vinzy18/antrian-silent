@@ -1,0 +1,19 @@
+[
+  {
+    "patientId": 1,
+    "patientName": "Hello",
+    "service": "MCU",
+    "clinic": "Wellness",
+    "visitDate": "2023-12-02",
+    "birthDate": "2023-12-01",
+    "rooms": []
+  },
+  {
+    "patientId": 2,
+    "patientName": "Nino",
+    "service": "MCU",
+    "clinic": "BOP",
+    "visitDate": "2023-12-11",
+    "birthDate": "2023-12-01"
+  }
+]

@@ -1,0 +1,53 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<section class="container d-flex justify-content-center mt-5">
+  <form
+    action="/employees/create"
+    method="POST"
+    class="row g-3 container d-flex justify-content-center mt-5"
+  >
+    <div class="row d-flex justify-content-center mb-3">
+      <h4 class="mb-5">+ Create data employee</h4>
+      <div class="col-md-10">
+        <label for="" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Name"
+        />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="job" class="form-label">Job</label>
+        <input name="job" type="text" class="form-control" placeholder="Job" />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="age" class="form-label">Age</label>
+        <input name="age" type="text" class="form-control" placeholder="Age" />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="city" class="form-label">City</label>
+        <input
+          name="city"
+          type="text"
+          class="form-control"
+          placeholder="city"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 mt-3">
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary" value="Create Data" />
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include('../layouts/footer.ejs'); -%>

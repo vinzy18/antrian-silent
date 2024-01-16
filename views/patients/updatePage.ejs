@@ -1,0 +1,79 @@
+<%- include('../layouts/header.ejs'); -%>
+
+<section class="container d-flex justify-content-center mt-5">
+  <form
+    action="/patients/update/<%= patient.patientId %>"
+    method="POST"
+    class="row g-3 container d-flex justify-content-center mt-5"
+  >
+    <div class="row d-flex justify-content-center mb-3">
+      <h4 class="mb-5">+ Update data Patient</h4>
+      <div class="col-md-10">
+        <label for="patientName" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="patientName"
+          placeholder="Patient Name"
+          value="<%= patient.patientName %>"
+        />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="service" class="form-label">Service</label>
+        <input
+          name="service"
+          type="text"
+          class="form-control"
+          placeholder="Service"
+          value="<%= patient.service %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="clinic" class="form-label">Clinic</label>
+        <input
+          name="clinic"
+          type="text"
+          class="form-control"
+          placeholder="Clinic"
+          value="<%= patient.clinic %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="visitDate" class="form-label">Visit Date</label>
+        <input
+          name="visitDate"
+          type="date"
+          class="form-control"
+          placeholder="Visit Date"
+          value="<%= patient.visitDate %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-3">
+      <div class="col-md-10">
+        <label for="birthDate" class="form-label">Birth Date</label>
+        <input
+          name="birthDate"
+          type="date"
+          class="form-control"
+          placeholder="Birth Date"
+          value="<%= patient.birthDate %>"
+        />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5 mt-3">
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary" value="Update Data" />
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include('../layouts/footer.ejs'); -%>

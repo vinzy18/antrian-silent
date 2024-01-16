@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2,
+    "name": "Content Creator",
+    "category": "Creative",
+    "max_salary": 8000000,
+    "min_salary": 5000000
+  },
+  {
+    "id": 3,
+    "name": "FE Developer",
+    "category": "Technology",
+    "max_salary": 15000000,
+    "min_salary": 6000000
+  },
+  {
+    "id": 4,
+    "name": "Auditor",
+    "category": "Finance",
+    "max_salary": 15000000,
+    "min_salary": 6000000
+  }
+]
